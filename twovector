@@ -1,0 +1,36 @@
+#include<stdio.h> //standard input and output
+#include<iostream> //input output stream
+#include<cstdlib>//general purpose header
+using namespace std;
+#define MAX 10
+int main()
+{
+int a[MAX],b[MAX],c[MAX],i;
+printf("\n First Vector:\t");
+for(i=0;i<MAX;i++)
+{
+a[i]=rand()%1000;
+}
+for(i=0;i<MAX;i++)
+{
+printf("%d\t",a[i]);
+}
+printf("\n Second Vector:\t");
+for(i=0;i<MAX;i++)
+{
+b[i]=rand()%1000;
+}
+for(i=0;i<MAX;i++)
+{
+printf("%d\t",b[i]);
+}
+printf("\n Vector Addition:(a,b,c)\t");
+for(i=0;i<MAX;i++)
+{
+c[i]=a[i]+b[i];
+}
+for(i=0;i<MAX;i++)
+{
+printf("\n%d\t%d\t%d",a[i],b[i],c[i]);
+}
+}
